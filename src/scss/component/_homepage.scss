@@ -1,0 +1,282 @@
+.main {
+    margin: 1rem 0;
+
+    &__menu {
+        margin: 1rem 0;
+        @media screen and (max-width: $desktop-screen) {
+            display: none;
+        }
+
+        &__wrapper {
+            ul {
+                @include displayFlex(flex-start, none);
+
+                li {
+                    @include w-h(14.2%, 7rem);
+                    border-right: 1px solid $black;
+
+                    .menu-item {
+                        @include w-h(100%, 100%);
+                        display: block;
+                        background-image: url(../../assets/img/bg-header-transparent-home.png);
+                        background-size: cover;
+                    }
+                }
+
+                li:nth-child(1) {
+                    .menu-item {
+                        background-position: -1% 0;
+                    }
+                }
+
+                li:nth-child(2) {
+                    .menu-item {
+                        background-position: -17% 0;
+                    }
+                }
+
+                li:nth-child(3) {
+                    .menu-item {
+                        background-position: -33% 0;
+                    }
+                }
+
+                li:nth-child(4) {
+                    .menu-item {
+                        background-position: -50% 0;
+                    }
+                }
+
+                li:nth-child(5) {
+                    .menu-item {
+                        background-position: -67% 0;
+                    }
+                }
+
+                li:nth-child(6) {
+                    .menu-item {
+                        background-position: -85% 0;
+                    }
+                }
+
+                li:nth-child(7) {
+                    border-right: none;
+
+                    .menu-item {
+                        background-position: -102% 0;
+                    }
+                }
+            }           
+        }
+
+        &-underline {
+            @include w-h(100%, .5rem);
+            margin-top: .5rem;
+            background-image: url(../../assets/img/bg_h3_line.jpg);
+        }
+    }
+
+    &__banner {
+        @include w-h(100%, 30rem);
+        @include setBackgroundImg("../../assets/img/bg_c_bricks.png", repeat, none, contain);
+
+        &__content {
+            .slick-slider {
+                .slick-prev::before, .slick-next::before{
+                    @include arrowCarousel();
+                }
+
+                .slick-dots {
+                    position: absolute;
+                    bottom: 2%;   
+
+                    li {
+                        button::before{
+                            font-size: .8rem;
+                            @media screen and (max-width: $tablet-screen) {
+                                font-size: .5rem;
+                            }
+                        }
+                        @media screen and (max-width: $tablet-screen) {
+                            width: .5rem;
+                        }
+                    }
+                }
+            }
+
+            .banner-item {
+                img {
+                    @include w-h(100%, 30rem);
+                }
+            } 
+        }
+
+        @media screen and (max-width: $tablet-screen) {
+            @include w-h(100%, 20rem);
+
+            .banner-item {
+                img{
+                    @include w-h(100%, 20rem);
+                }
+            } 
+        }
+
+        @media screen and (max-width: $mobile-screen) {
+            @include w-h(100%, 15rem);
+
+            .banner-item {
+                img{
+                    @include w-h(100%, 15rem);
+                }
+            } 
+        }
+    }
+
+    &__movieShow {
+        margin-top: 1.5rem;
+
+        &__content {
+            &__title {
+                @include setBackgroundImg("../../assets/img/bg_h3_line.jpg", repeat-x, center, none);
+
+                h3 {
+                    @include setBackgroundImg("../../assets/img/h3_movie_selection.gif", no-repeat, center, none);
+                    color: transparent;
+                    height: 3rem;
+                    @media screen and (max-width: $mobile-screen) {
+                        background-size: 70%;
+                    }
+                }
+            }
+
+            &__menu {
+                @include displayFlex(center, center);
+                margin-top: .8rem;
+
+                ul {
+                    @include displayFlex(center, center);
+                    background-color: $dark-red;
+                    width: fit-content;
+                    padding: .5rem 1rem;
+                    border-radius: .6rem;
+                    @media screen and (max-width: $mobile-screen) {
+                        padding: .3rem .5rem;
+                    }
+
+                    li {
+                        @include displayFlex(flex-start, center);
+                        cursor: pointer;
+                        color: $white;
+                        padding: 0 .8rem;
+
+                        img {
+                            margin-right: .5rem;
+                        }
+                        @media screen and(max-width: $mobile-screen) {
+                            font-size: .8rem;
+                            padding: 0 .5rem;
+                        }
+                    }
+
+                    li:first-child {
+                        border-right: 1px solid $white;
+                    }
+                }
+            }
+
+            &__slide {
+                margin-top: 1rem;
+
+                .slick-slider {
+                    .slick-prev::before, .slick-next::before{
+                        @include arrowCarousel();
+                    }
+                }
+
+                .slide-item {
+                    position: relative;
+                    padding: 0 .1rem;
+                    cursor: pointer;
+                    outline: none;
+
+                    &__img {
+                        @include w-h(100%, 28rem);
+                    }
+
+                    &__content {
+                        background-color: $black;
+                        padding: 1rem 0 .5rem 0;
+                        position: absolute;
+                        bottom: 0;
+                        right: .1rem;
+                        left: .1rem;
+                        display: none;
+
+                        h3 {
+                            text-align: center;
+                            color: $white;
+                        }
+
+                        &-btn {
+                            @include displayFlex(space-around, center);
+                            margin: .5rem 0;
+
+                            a {
+                                background-color: $dark-red;
+                                color: $white;
+                                padding: .5rem 1rem;
+                                border-radius: 5px;
+                            }
+
+                            .order-btn {
+                                @include displayFlex(flex-start, center);
+                            }
+                        }
+                    }
+                }
+
+                .slide-item:hover {
+                    .slide-item__content {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+
+    &__event {
+        margin-top: 1.5rem;
+
+        &__content {
+            &__title {
+                @include setBackgroundImg("../../assets/img/bg_h3_line.jpg", repeat-x, center, none);
+
+                h3 {
+                    @include setBackgroundImg("../../assets/img/h3_event.gif", no-repeat, center, none);
+                    color: transparent;
+                    height: 3rem;
+                    @media screen and (max-width: $mobile-screen) {
+                        background-size: 30%;
+                    }
+                }
+            }
+
+            &__slide {
+                margin-top: 1rem;
+
+                .slick-slider {
+                    .slick-prev::before, .slick-next::before{
+                        @include arrowCarousel();
+                    }
+                }
+
+                .event-item {
+                    img {
+                        width: 100%;
+                        padding: 0 .2rem;
+                    }
+                }
+            }
+        }
+    }
+}

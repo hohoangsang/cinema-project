@@ -1,0 +1,84 @@
+.main__detailEvent {
+    margin: 1.5rem 0 3rem 0;
+
+    &__wrapper {
+        &__title {
+            @include displayFlex(flex-start, baseline);
+            padding: 1rem 0;
+            border-bottom: 2px solid $black;
+
+            h2 {
+                color: $dark-red;
+                font-size: 1.5rem;
+                font-weight: lighter;
+                @media screen and(max-width: $tablet-screen) {
+                    font-size: 1.2rem;
+                }
+                @media screen and(max-width: $mobile-screen) {
+                    font-size: 1.2rem;
+                    text-align: center;
+                }
+            }
+        }
+
+        &__content {
+            @include displayFlex(space-between, unset);
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+            @media screen and(max-width: $tablet-screen) {
+                margin-top: 1rem;
+                
+            }
+            @media screen and(max-width: $mobile-screen) {
+                margin-top: .5rem;
+            }
+
+            &-img {
+                @include w-h(30%, 100%);
+                @media screen and(max-width: $tablet-screen) {
+                    @include w-h(40%, 100%);
+                }
+                @media screen and(max-width: $mobile-screen) {
+                    @include w-h(100%, 100%);
+                }
+                img {
+                    width: -webkit-fill-available;
+                    @media screen and(max-width: $mobile-screen) {
+                        display: block;
+                        margin: auto;
+                        width: 70%;
+                    }
+                }
+            }
+
+            &-info {
+                @include w-h(67%, 100%);
+                @media screen and(max-width: $tablet-screen) {
+                    @include w-h(57%, 100%);
+                    p {
+                        b {
+                            font-size: .9rem;
+                        }
+                    }
+
+                    ul {
+                        li {
+                            font-size: .9rem;
+                        }
+                    }
+                }
+                @media screen and(max-width: $mobile-screen) {
+                    @include w-h(100%, 100%);
+                    margin-top: 1rem;
+                }
+
+                p, ul {
+                    margin-bottom: .5rem;
+                    @media screen and(max-width: $mobile-screen) {
+                        margin-bottom: .2rem;
+                    }
+                }
+            }
+        }
+    }
+}

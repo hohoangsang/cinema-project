@@ -1,0 +1,169 @@
+.main__moviePage {
+    margin: 1rem 0;
+
+    &__title {
+        @include displayFlex(flex-start, baseline);
+        padding: 1rem 0;
+        border-bottom: 3px solid $black;
+
+        h2 {
+            @include w-h(50%, 100%);
+            font-size: 2rem;
+            font-weight: lighter;
+            @media screen and(max-width: $tablet-screen) {
+                font-size: 1.7rem;
+            }
+            @media screen and(max-width: $mobile-screen) {
+                font-size: 1.2rem;
+            }
+        }
+
+        ul {
+            @include w-h(50%, 100%);
+            @include displayFlex(flex-end, none);
+
+            li {
+                a {
+                    color: $light-grey;
+                    font-size: 1.5rem;
+                    @media screen and(max-width: $tablet-screen) {
+                        font-size: 1.2rem;
+                    }
+                    @media screen and(max-width: $mobile-screen) {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    &__search {
+        @include displayFlex(flex-end, none);
+        margin: 1rem 0;
+
+        &__form {
+            input {
+                outline: none;
+                border: 1px solid $dark-red;
+                padding: .5rem 1rem;
+                border-radius: .8rem 0 0 .8rem;
+            }
+
+            button{
+                background-color: $dark-red;
+                color: $white;
+                outline: none;
+                border: 1px solid $dark-red;
+                padding: .5rem 1rem;
+                border-radius: 0 .8rem .8rem 0;
+            }
+
+            @media screen and(max-width: $mobile-screen) {
+                input, button {
+                    font-size: .8rem;
+                    padding: .3rem .8rem;
+                }
+            }
+        }
+
+        @media screen and(max-width: $mobile-screen) {
+            @include displayFlex(center, center);
+            margin: 1rem 0 .5rem 0;
+        }
+    }
+
+    &__movieList {
+        @include displayFlex(space-between, none);
+        flex-wrap: wrap;
+
+        &-item {
+            @include w-h(24%, 36rem);
+            padding: 1rem .6rem;
+            margin-bottom: 1rem;
+            position: relative;
+            @media screen and(max-width: $desktop-screen) {
+                padding: .8rem 0;
+                height: 32rem;
+            }
+            @media screen and(max-width: $tablet-screen) {
+                @include w-h(32%, 28rem);
+            }
+            @media screen and(max-width: $mobile-screen) {
+                @include w-h(48%, 23rem);
+            }
+
+            &--image {
+                img {
+                    width: 100%;
+                    height: 25rem;
+                    border: 4px solid $black;
+                    @media screen and(max-width: $desktop-screen) {
+                        height: 20rem;
+                    }
+                    @media screen and(max-width: $tablet-screen) {
+                        height: 16rem;
+                    }
+                    @media screen and(max-width: $mobile-screen) {
+                        width: 100%;
+                        height: 12rem;
+                    }
+                }
+            }
+
+            &--info {
+                h4 {
+                    margin: .3rem 0;
+                    @media screen and(max-width: $tablet-screen) {
+                        font-size: .9rem;
+                        margin: .2rem 0;
+                    }
+                    @media screen and(max-width: $mobile-screen) {
+                        font-size: .7rem;
+                    }
+                }
+
+                .movie-info {
+                    span {
+                        font-size: .9rem;
+                        @media screen and(max-width: $tablet-screen) {
+                            font-size: .8rem;
+                        }
+                        @media screen and(max-width: $mobile-screen) {
+                            font-size: .6rem;
+                        }
+                    }
+
+                    &--bold {
+                        font-weight: bold;
+                    }
+                }
+                .order-btn {
+                    position: absolute;
+                    bottom: 0;
+
+                    a {
+                        @include displayFlex(flex-start, center);
+                        @include w-h(fit-content, 100%);
+                        top: 100%;
+                        bottom: 0;
+                        left: 0;
+                        right: 100%;
+                        color: $white;
+                        background-color: $dark-red;
+                        padding: .3rem .5rem;
+                        @media screen and(max-width: $mobile-screen) {
+                            padding: .2rem .4rem;
+                            p {
+                                font-size: .8rem;
+                            }
+                        }
+    
+                        img {
+                            margin-right: .2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

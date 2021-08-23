@@ -1,0 +1,37 @@
+.login-register--box {
+    margin: 2rem 0;
+
+    &__content {
+        &__header {
+            @include w-h(70%, 100%);
+            background-color: $dark-red;
+            padding: 1rem 1rem .8rem 1rem;
+            margin-bottom: 1rem;
+            @media screen and (max-width: $tablet-screen) {
+                @include w-h(100%, 100%);
+            }
+
+            span {
+                cursor: pointer;
+                margin: 0 2rem;
+                @media screen and (max-width: $mobile-screen) {
+                    font-size: .8rem;
+                    margin: 0 1rem;
+                }
+
+                a{
+                    color: $light-shade-grey;
+                    @media screen and (max-width: $mobile-screen) {
+                        font-size: .8rem;
+                    }
+                }
+            }
+
+            .active{
+                color: $white;
+                border-bottom: .2rem solid $white;
+                padding-bottom: .6rem;
+            }
+        }
+    }
+}

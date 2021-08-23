@@ -1,0 +1,108 @@
+{
+    "header":{
+        "navTop":{
+            "careers":"TUYỂN DỤNG",
+            "news_&_offers":"TIN MỚI & ƯU ĐÃI",
+            "my_ticker": "VÉ CỦA TÔI",
+            "account": "ĐĂNG NHẬP/ĐĂNG KÝ",
+            "my_account":"TÀI KHOẢN CỦA TÔI",
+            "log_out": "ĐĂNG XUẤT"
+        },
+        "navBottom":{
+            "movies":{
+                "title":"PHIM",
+                "now_showing":"Phim Đang Chiếu",
+                "coming_soon":"Phim Sắp Chiếu",
+                "search": "Tìm kiếm phim..."
+            },
+            "theaters":{
+                "title":"RẠP CGV",
+                "all_cinema":"Tất Cả Các Rạp",
+                "special_cinema":"Rạp Đặt Biệt",
+                "opening_soon":"Rạp Sắp mở"
+            },
+            "membership":"THÀNH VIÊN",
+            "contact":"LIÊN HỆ"
+        }
+    },
+    "footer":{
+        "ul-1":{
+            "title":"CGV Việt Nam",
+            "about_us":"Giới Thiệu",
+            "e_cgv":"Tiện Ích Online",
+            "gift_card":"Thẻ Quà Tặng",
+            "carrer":"Tuyển Dụng",
+            "contact":"Liên Hệ CGV"
+        },
+        "ul-2":{
+            "title":"Điều khoản sử dụng",
+            "condition":"Điều Khoản Chung",
+            "terms":"Điều Khoản Giao Dịch",
+            "payment_policy":"Chính Sách Thanh Toán",
+            "privacy_policy":"Chính Sách Bảo Mật",
+            "f_a_q":"Câu Hỏi Thường Gặp"
+        },
+        "ul-3":{
+            "title":"Kết nối với chúng tôi"
+        },
+        "ul-4":{
+            "title":"Chăm sóc khách hàng",
+            "hotline":"Hotline: 1900 6017",
+            "working_hour":"Giờ làm việc: 8:00 - 22:00 (Tất cả các ngày bao gồm cả Lễ Tết)",
+            "email_support":"Email hỗ trợ: hoidap@cgv.vn"
+        }
+    },
+    "movies":{
+        "view_detail": "Xem chi tiết",
+        "order": "Mua vé",
+        "movie_detail": "Nội Dung Phim",
+        "description": "Chi tiết",
+        "director": "Đạo diễn",
+        "cast": "Diễn viên",
+        "genre": "Thể loại",
+        "releaseDate": "Khởi chiếu",
+        "runningTime": "Thời lượng",
+        "language": "Ngôn ngữ",
+        "rate": "Rated"
+    },
+    "login":{
+        "login": "Đăng nhập",
+        "email": "Email",
+        "email_placeholder": "Nhập email",
+        "password": "Mật khẩu",
+        "password_placeholder": "Nhập mật khẩu",
+        "require": " không được để trống",
+        "incorrect": "Không hợp lệ"
+    },
+    "register":{
+        "register":"Đăng ký",
+        "fullname":"Họ và tên",
+        "fullname_placeholder":"Nhập họ và tên",
+        "birthday":"Ngày sinh",
+        "birthday_placeholder":"Nhập ngày sinh",
+        "phone_number": "Số điện thoại",
+        "phone_number_placeholder": "Nhập số điện thoại",
+        "email":"Email",
+        "email_placeholder":"Nhập email",
+        "password":"Mật khẩu",
+        "password_placeholder":"Nhập mật khẩu",
+        "confirm_password":"Xác nhận password",
+        "confirm_password_placeholder":"Nhập lại mật khẩu",
+        "require":" không được để trống",
+        "incorrect": "Không hợp lệ",
+        "phone_number_error": "Số điện thoại không hợp lệ",
+        "password_error": "Mật khẩu chứa ít nhất 8 kí tự, bao gồm 1 chữ hoa, 1 chữ thường và 1 số",
+        "confirm_password_error": "Mật khẩu không khớp",
+        "email_error": "Email không hợp lệ",
+        "fullname_error": "Họ và tên không hợp lệ"
+    },
+    "info":{
+        "info_person":"Thông tin cá nhân",
+        "help":"Trợ giúp",
+        "logout":"Đăng xuất"
+    },
+    "search": {
+        "results_searched": "kết quả được tìm kiếm",
+        "nothing": "Không có có kết quả nào được tìm kiếm"
+    }
+}

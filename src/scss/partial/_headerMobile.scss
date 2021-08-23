@@ -1,0 +1,60 @@
+@media screen and(max-width:750px) {
+    .header {
+        &__mobile {
+            display: block;
+
+            &__logo {
+                @include displayFlex(center, center);
+                margin: 1rem;
+            }
+
+            &__content {
+                @include displayFlex(flex-start, none); 
+
+                &-item {
+                    @include displayFlex(center, center);
+                    border-top: 2px solid $light-grey;
+                    border-right: 2px solid $light-grey;
+                    width: 25%;
+                    padding: .5rem 0;
+
+                    i {
+                        color: $light-grey;
+                        font-size: 1.5rem;
+                    }
+
+                    &--active {
+                        background-color: $bg-footer;
+                    }
+                }
+
+                &-item:last-child {
+                    border-right: none;
+                }
+            }
+            
+            &__nav, &__account {
+                background-color: $bg-footer;
+
+                p {
+                    font-size: .8rem;
+                    border-bottom: 1px solid $light-grey;
+                    padding: .5rem;
+                    color: $grey;
+                    font-weight: bold;
+
+                    i {
+                        margin-right: .2rem;
+                    }
+                }
+
+                .nav-item {
+
+                    &--lvl1 {
+                        margin-left: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}

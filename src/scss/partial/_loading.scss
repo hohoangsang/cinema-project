@@ -1,0 +1,17 @@
+.loading{
+    position: fixed;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 9999;
+    background-color: rgba($color: $light-shade-grey, $alpha: .5);
+    img {
+        position: absolute;
+        width: 10rem;
+        height: 10rem;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+}

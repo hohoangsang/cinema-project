@@ -1,0 +1,88 @@
+.main__event {
+    margin-bottom: 3rem;
+    &__title {
+        @include setBackgroundImg("../../assets/img/bg_h3_line.jpg", repeat-x, center, none);
+
+        h3 {
+            @include setBackgroundImg("../../assets/img/bg-new-offer-vn.png", no-repeat, center, contain);
+            @include w-h(38%, 3rem);
+            display: block;
+            margin: auto;
+            background-color: $white;
+            color: transparent;
+            @media screen and (max-width: $tablet-screen) {
+                @include w-h(50%, 3rem);
+            }
+            @media screen and (max-width: $mobile-screen) {
+                @include w-h(60%, 2rem);
+            }
+        }
+    }
+
+    &__list {
+        margin-top: 1rem;
+        padding-bottom: 2rem;
+        border-bottom: 3px solid $black;
+        ul {
+            @include displayFlex(flex-start, none);
+            flex-wrap: wrap;
+            @media screen and(min-width: $tablet-screen) {
+                .event-item:nth-child(4n) {
+                    margin-right: 0;  
+                }
+            }
+            @media screen and(max-width: $tablet-screen) and (min-width: $mobile-screen) {
+                .event-item:nth-child(3n) {
+                    margin-right: 0;
+                }
+            }
+            @media screen and(min-width: 0) and (max-width: $mobile-screen) {
+                .event-item:nth-child(2n) {
+                    margin-right: 0;
+                }
+            }
+
+            .event-item {
+                @include w-h(23%, 100%);
+                margin: 1rem 2.6% 1rem 0;
+
+                @media screen and (max-width: $tablet-screen) {
+                    @include w-h(30%, 100%);
+                    margin: 1rem 5% 1rem 0;
+                }
+
+                @media screen and (max-width: $mobile-screen) {
+                    @include w-h(48%, 100%);
+                    margin: 1rem 4% 1rem 0;
+                }
+
+                &--wrapper {
+                    @include displayFlex(center, center);
+                    flex-direction: column;
+
+                    &__poster {
+                        @include w-h(100%, 100%);
+                        border: 2px solid $light-shade-grey;
+
+                        img {
+                            @include w-h(100%, 100%);
+                        }
+                    }
+
+                    &__releaseDay {
+                        @include displayFlex(flex-start, center);
+                        margin-top: .5rem;
+
+                        p {
+                            margin-left: .5rem;
+                            font-size: .9rem;
+                            @media screen and (max-width: $mobile-screen) {
+                                font-size: .8rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,162 @@
+.footer {
+    @include w-h(100%, 100%);
+
+    .footer__top {
+        @include w-h(100%, 100%);
+        border-top: 2px solid $black;
+
+        &-brand {
+            @include w-h(100%, 2rem);
+            background-image: url(../../assets/img/brand-type-film-footer_ver2.png);
+            background-size: cover;
+        }
+    }
+
+    .footer__middle {
+        border-top: 2px solid $black;
+
+        &__policy {
+            @include displayFlex(space-between, none);
+            padding: .5rem 0 1rem 0;
+
+            .policy--item {
+                @include w-h(25%, 100%);
+                margin-top: .5rem;
+                margin-right: .3rem;
+
+                &__title {
+                    color: $grey;
+                }
+
+                &__menu {
+                    margin-top: .5rem;
+                    color: $light-grey;
+
+                    li {
+                        margin-bottom: .2rem;
+                        cursor: pointer;
+                    }
+
+                    li:hover {
+                        color: $dark-red;
+                    }
+                }
+
+                .cgv-social--menu {
+                    @include displayFlex(flex-start, center);
+
+                    li {
+                        @include w-h(2.5rem, 2.5rem);
+
+                        a {
+                            @include w-h(100%, 100%);
+                            background-image: url(../../assets/img/bg-social-footer-40.png);
+                            display: block;
+                            color: transparent;
+                            transition: all .4 ease;
+                        }
+
+                        a.follow-fb {
+                            background-position: -9px -3px;
+                        }
+
+                        a.follow-youtube {
+                            background-position: -54px -3px;
+                        }
+
+                        a.follow-instagram {
+                            background-position: -98px -3px;
+                        }
+
+                        a.follow-zalo {
+                            background-position: -191px -3px;
+                        }
+
+                        a:hover {
+                            transform: scale(.9);
+                            transition: all .4 ease;
+                        }
+                    }
+                }
+
+                &-permision {
+                    @include w-h(100%, 4rem);
+
+                    a {
+                        @include w-h(100%, 100%);
+                        background-image: url(../../assets/img/cong-thuong.PNG);
+                        background-repeat: no-repeat;
+                        color: transparent;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer__policy-cgv {
+        @include displayFlex(space-between, center)
+    }
+
+    .footer__bottom {
+        @include w-h(100%, 7rem);
+        background-image: url(../../assets/img/bg-bottom-footer.jpg);
+        background-repeat: repeat;
+    }
+}
+
+@media screen and(max-width: 950px) { 
+    .footer__middle {
+        &__policy {
+            flex-wrap: wrap;
+
+            .policy--item {
+                @include w-h(32% !important, 100%);
+
+                &:nth-child(4) {
+                    @include w-h(100% !important, 100%);
+                    background-color: $bg-footer;
+
+                    h4 {
+                        text-align: center;
+                    }
+
+                    ul {
+                        @include displayFlex(center, center);
+                        flex-direction: column;
+
+                        li {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .footer__middle {
+        .policy--item {
+            @include w-h(45% !important, 100%);
+
+            &:nth-child(3) {
+                @include w-h(100% !important, 100%);
+
+                h4 {
+                    text-align: center;
+                }
+
+                ul {
+                    @include displayFlex(center !important, center);
+                }
+            }
+
+            &-permision {
+                a {
+                    background-position: center;
+                }
+            }
+        }
+    }
+}

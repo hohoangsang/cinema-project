@@ -1,0 +1,108 @@
+{
+    "header":{
+        "navTop":{
+            "careers":"CARRERS",
+            "news_&_offers":"NEWS & OFFER",
+            "my_ticker": "MY TICKET",
+            "account": "LOG IN/REGISTER",
+            "my_account":"MY ACCOUNT",
+            "log_out":"LOG OUT"
+        },
+        "navBottom":{
+            "movies":{
+                "title":"MOVIES",
+                "now_showing":"Now Showing",
+                "coming_soon":"Coming Soon",
+                "search": "Search movie..."
+            },
+            "theaters":{
+                "title":"THEATERS",
+                "all_cinema":"All CGV Cinema",
+                "special_cinema":"Special Cinema",
+                "opening_soon":"Opening Soon"
+            },
+            "membership":"MEMBERSHIP",
+            "contact":"CONTACT"
+        }
+    },
+    "footer":{
+        "ul-1":{
+            "title":"CGV Vietnam",
+            "about_us":"About Us",
+            "e_cgv":"e-CGV",
+            "gift_card":"Gift Card",
+            "carrer":"Career",
+            "contact":"Contact CGV"
+        },
+        "ul-2":{
+            "title":"Terms and Conditions",
+            "condition":"Conditions of Website Use",
+            "terms":"Terms of Use",
+            "payment_policy":"Payment Policy",
+            "privacy_policy":"Privacy Policy",
+            "f_a_q":"F.A.Q"
+        },
+        "ul-3":{
+            "title":"Follow Us"
+        },
+        "ul-4":{
+            "title":"Customer Service",
+            "hotline":"Hotline: 1900 6017",
+            "working_hour":"Working hours: 8:00 - 22:00 (Monday to Sunday, including Public Holidays)",
+            "email_support":"Email support: hoidap@cgv.vn"
+        }
+    },
+    "movies":{
+        "view_detail": "More detail",
+        "order": "Order",
+        "movie_detail": "Movie Detail",
+        "description": "Description",
+        "director": "Director",
+        "cast": "Cast",
+        "genre": "Genre",
+        "releaseDate": "Release date",
+        "runningTime": "Running Time",
+        "language": "Language",
+        "rate": "Rated"
+    },
+    "login":{
+        "login": "Login",
+        "email": "Email",
+        "password": "Password",
+        "email_placeholder": "Enter email",
+        "password_placeholder": "Enter password",
+        "require": " is required",
+        "incorrect": "This field is incorrect"
+    },
+    "register":{
+        "register":"Register",
+        "fullname":"Fullname",
+        "fullname_placeholder":"Enter fullname",
+        "birthday":"Date of birth",
+        "birthday_placeholder":"Enter date",
+        "phone_number": "Phone number",
+        "phone_number_placeholder": "Enter phone number",
+        "email":"Email",
+        "email_placeholder":"Enter email",
+        "password":"Password",
+        "password_placeholder":"Enter password",
+        "confirm_password":"Comfirm password",
+        "confirm_password_placeholder":"Enter confirm password",
+        "require":" is required",
+        "incorrect": "This field is incorrect",
+        "phone_number_error": "Invalid phone number",
+        "password_error": "Password contains at least 8 characters, including 1 uppercase letter, 1 lowercase letter and 1 number",
+        "confirm_password_error": "Password not match",
+        "email_error": "Invalid email",
+        "fullname_error": "Invalid name"
+    },
+    "info":{
+        "info_person":"Personal Information",
+        "help":"Help",
+        "logout":"Logout"
+    },
+    "search": {
+        "results_searched": "results searched",
+        "nothing": "No results were found"
+    }
+}
