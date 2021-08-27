@@ -1,0 +1,188 @@
+.userPage {
+    margin: 2rem 0;
+
+    &-wrapper {
+        @include displayFlex(space-between, unset);
+
+        aside {
+            @include w-h(23%, 100%);
+
+            ul {
+                li {
+                    margin-bottom: .4rem;
+
+                    a {
+                        @include w-h(100%, 100%);
+                        
+        
+                        p {
+                            font-weight: bold;
+                            color: $grey;
+                            font-size: .9rem;
+                            background-color: $light-shade-grey;
+                            padding: .6rem 0 .6rem 2rem;
+                            border-radius: .8rem 0 0 .8rem;
+                        }
+                    }
+                    .selected {
+                        p{
+                            color: $white;
+                            background-color: $dark-red;
+                        }
+                    }
+                }
+            }        
+        }
+
+        article {
+            @include w-h(75%, 100%);
+
+            .page-title {
+                @include w-h(100%, 100%);
+                background-color: $black;
+                padding: .3rem 0;
+
+                h2 {
+                    text-transform: uppercase;
+                    text-align: center;
+                    color: $light-shade-grey;
+                    font-size: 1.4rem;
+                }
+            }
+
+            .infoPage {
+                &__profile {
+                    &--top {
+                        .profile__img {
+                            @include w-h(20%, 11rem);
+                            margin: .5rem 0; 
+
+                            img {
+                                @include w-h(-webkit-fill-available, 100%);
+                                border-radius: 50%;
+                                border: 2px solid $black;
+                            }
+                        }
+
+                        .profile__bio {
+                            margin: 1rem 0;
+                            p{
+                                font-size: .9rem;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+
+                    &--box {
+                        .box-head {
+                            @include w-h(100%, 100%);
+                            border-bottom: 1px solid $light-grey;
+                            padding-bottom: .5rem;
+                            margin-bottom: .5rem;
+
+                            p {
+                                font-size: .9rem;
+                                font-weight: bold;
+                            }
+                        }
+
+                        .box-btn {
+                            @include w-h(fit-content, 100%);
+                            margin-top: 1rem;
+                            background-color: $grey;
+                            padding: .5rem 1rem;
+                            border-radius: 8px;
+
+                            a {
+                                font-size: .9rem;
+                                color: $white;
+                            }
+                        }
+                    }
+
+                    span {
+                        display: block;
+                        color: $grey;
+                        font-size: .9rem;
+                        margin-top: .5rem;
+                    }
+                }
+            }
+
+            .editPage {
+                &__form {
+                    margin-top: 1rem;
+
+                    form {
+                        @include displayFlex(space-between, unset);
+                        flex-wrap: wrap;
+
+                        .row-block {
+                            @include w-h(48%, 100%);
+                            margin-bottom: .5rem;
+
+                            label {
+                                display: block;
+                                font-weight: bold;
+                                margin-bottom: .2rem;
+                                
+                                span {
+                                    color: $dark-red;
+                                }
+                            }
+
+                            input {
+                                @include w-h(100%, 100%);
+                                border: 1px solid $dark-red;
+                                padding: .3rem .7rem;
+                            }
+
+                            span {
+                                color: $dark-red;
+                                font-size: .8rem;
+                            }
+                        }
+
+                        .row-block:first-child {
+                            @include w-h(100%, 100%);
+                        }
+
+                        .form-btn {
+                            @include w-h(fit-content, 100%);
+
+                            button {
+                                margin-top: 1rem;
+                                margin-right: 1rem;
+                                outline: none;
+                                border: none;
+                                cursor: pointer;
+                                font-size: .9rem;
+                            }
+
+                            .primary-btn {
+                                background-color: $dark-red;
+                                padding: .5rem 1rem;
+                                border-radius: 8px;
+                                color: $white;
+                            }
+
+                            .secondary-btn {
+                                background-color: transparent;
+                                color: $dark-red;
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+
+                    .form-changePassword {
+                        margin-top: 1rem;
+
+                        .row-block:first-child {
+                            @include w-h(48%, 100%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

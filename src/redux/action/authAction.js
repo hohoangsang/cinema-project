@@ -3,10 +3,11 @@ export const LOG_IN_SUCCESS = "LOG_IN_SUCCESS"
 export const LOG_IN_FAIL = "LOG_IN_FAIL"
 
 export const REGISTER_REQUEST = "REGISTER_REQUEST"
-export const REGISTER_SUCCESS = "REGISTER_SUCCESS"
 export const REGISTER_FAIL = "REGISTER_FAIL"
 
 export const LOG_OUT_REQUEST = "LOG_OUT_REQUEST"
+
+export const WATCH_IS_LOGGED = "WATCH_IS_LOGGED"
 
 export const logInRequest = (email, password) => {
     return {
@@ -18,10 +19,9 @@ export const logInRequest = (email, password) => {
     }
 }
 
-export const logInSuccess = (user) => {
+export const logInSuccess = () => {
     return {
-        type: LOG_IN_SUCCESS,
-        payload: user
+        type: LOG_IN_SUCCESS
     }
 }
 
@@ -39,13 +39,6 @@ export const registerRequest = (userInfo) => {
     }
 }
 
-export const registerSuccess = (user) => {
-    return {
-        type: REGISTER_SUCCESS,
-        payload: user
-    }
-}
-
 export const registerFail = (error) => {
     return {
         type: REGISTER_FAIL,
@@ -56,5 +49,12 @@ export const registerFail = (error) => {
 export const logOutRequest = () => {
     return {
         type: LOG_OUT_REQUEST
+    }
+}
+
+export const watchIsLogged = (token) => {
+    return {
+        type: WATCH_IS_LOGGED,
+        payload: token
     }
 }

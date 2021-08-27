@@ -94,12 +94,20 @@
         "password_error": "Mật khẩu chứa ít nhất 8 kí tự, bao gồm 1 chữ hoa, 1 chữ thường và 1 số",
         "confirm_password_error": "Mật khẩu không khớp",
         "email_error": "Email không hợp lệ",
-        "fullname_error": "Họ và tên không hợp lệ"
+        "fullname_error": "Họ và tên không hợp lệ",
+        "default_avatar": "Ảnh đại diện"
     },
     "info":{
         "info_person":"Thông tin cá nhân",
         "help":"Trợ giúp",
-        "logout":"Đăng xuất"
+        "logout":"Đăng xuất",
+        "hi": "Xin chào",
+        "dashboard": "THÔNG TIN CHUNG",
+        "account_detail": "CHI TIẾT TÀI KHOẢN",
+        "transactions_history": "LỊCH SỬ GIAO DỊCH",
+        "bio": "Với trang này, bạn sẽ quản lý được tất cả thông tin tài khoản của mình.",
+        "edit": "Thay đổi",
+        "change_password": "Đổi mật khẩu"
     },
     "search": {
         "results_searched": "kết quả được tìm kiếm",

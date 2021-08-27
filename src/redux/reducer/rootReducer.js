@@ -8,6 +8,7 @@ import loadingReducer from '../reducer/loadingReducer';
 import searchReducer from '../reducer/searchReducer';
 import { connectRouter } from 'connected-react-router';
 import { history } from '../../utils/history';
+import userReducer from './userReducer';
 
 export default combineReducers({
     router: connectRouter(history),
@@ -17,5 +18,6 @@ export default combineReducers({
     filter: filterReducer,
     auth: authReducer,
     loading: loadingReducer,
-    search: searchReducer
+    search: searchReducer,
+    user: userReducer
 })

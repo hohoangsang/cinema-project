@@ -7,7 +7,7 @@ import iconAccount from '../../../assets/img/icon_login25.png';
 import iconNews from '../../../assets/img/icon_promotion25.png';
 import iconTicket from '../../../assets/img/icon_ticket25.png';
 import iconCareers from '../../../assets/img/recruitment_icon1.png';
-import { LOG_IN_PATH, MOVIE_SHOWING_PATH, MY_TICKET_PATH, MOVIE_COMING_PATH, EVENT_PATH } from '../../../constant/route';
+import { LOG_IN_PATH, MOVIE_SHOWING_PATH, MY_TICKET_PATH, MOVIE_COMING_PATH, EVENT_PATH, USER_INFO_PATH } from '../../../constant/route';
 import { logOutRequest } from '../../../redux/action/authAction';
 import SwitchLang from '../switchLang/SwitchLang';
 import HeaderMobile from './HeaderMobile';
@@ -15,6 +15,7 @@ import HeaderMobile from './HeaderMobile';
 function Header() {
     const { t } = useTranslation();
     const { isLogIn } = useSelector(state => state.auth);
+    const { currentUser } = useSelector(state => state.user);
     const dispatch = useDispatch();
     const history = useHistory();
     
@@ -52,11 +53,11 @@ function Header() {
                             <div className="header__top-item">
                                 <div className="header__top-item--title">
                                     <img src={iconAccount} alt="account"/>
-                                    <p>Xin chào Hồ Hoàng Sang!</p>
+                                    <p>Xin chào {currentUser[0].fullname}!</p>
                                 </div>
                                 <ul className="sub-menu">
                                     <li>
-                                        <Link to="/" className="sub-menu--item">
+                                        <Link to={USER_INFO_PATH} className="sub-menu--item">
                                             <p>{t('info.info_person')}</p>
                                         </Link>
                                     </li>

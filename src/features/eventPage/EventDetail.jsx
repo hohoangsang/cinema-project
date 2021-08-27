@@ -14,20 +14,20 @@ function EventDetail() {
     }, [])
 
     return (
-        <main className="main__detailEvent">
+        <main className="detailEvent">
             <Container>
                 {eventDetail.map(event => {
                     return (
-                        <div className="main__detailEvent__wrapper">
-                            <div className="main__detailEvent__wrapper__title">
+                        <div className="detailEvent__content">
+                            <div className="detailEvent__content__title">
                                 <h2>{event.title}</h2>
                             </div> 
-                            <div className="main__detailEvent__wrapper__content">
-                                <div className="main__detailEvent__wrapper__content-img">
+                            <div className="detailEvent__content__info">
+                                <div className="info__img">
                                     <img src={event.avatar} alt={event.title}/>
                                 </div>
                                 <div 
-                                    className="main__detailEvent__wrapper__content-info"
+                                    className="info__description"
                                     dangerouslySetInnerHTML={{ __html: event.detail?.join("")}}
                                 ></div>
                             </div>

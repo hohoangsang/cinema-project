@@ -483,6 +483,85 @@
     }
   ],
   "users": [
-    
+    {
+      "default_avatar": "https://i.picsum.photos/id/1005/5760/3840.jpg?hmac=2acSJCOwz9q_dKtDZdSB-OIK1HUcwBeXco_RMMTUgfY",
+      "fullname": "Hồ Hoàng Sang",
+      "birthday": "2021-08-04",
+      "phone_number": "0382374258",
+      "email": "hoangsangho93@gmail.com",
+      "password": "Duelingnetword1",
+      "isAdmin": false,
+      "id": 1
+    },
+    {
+      "default_avatar": "https://i.picsum.photos/id/1005/5760/3840.jpg?hmac=2acSJCOwz9q_dKtDZdSB-OIK1HUcwBeXco_RMMTUgfY",
+      "fullname": "Hồ Hoàng Sang",
+      "birthday": "2021-08-04",
+      "phone_number": "0382374258",
+      "email": "sang@gmail.com",
+      "password": "Duelingnetword1",
+      "isAdmin": false,
+      "id": 2
+    },
+    {
+      "default_avatar": "https://i.picsum.photos/id/1005/5760/3840.jpg?hmac=2acSJCOwz9q_dKtDZdSB-OIK1HUcwBeXco_RMMTUgfY",
+      "fullname": "Nguyễn Văn A",
+      "birthday": "2021-08-05",
+      "phone_number": "0382374258",
+      "email": "nguyenvanA@gmail.com",
+      "password": "Duelingnetword1",
+      "isAdmin": false,
+      "id": 3
+    },
+    {
+      "default_avatar": "https://i.picsum.photos/id/1005/5760/3840.jpg?hmac=2acSJCOwz9q_dKtDZdSB-OIK1HUcwBeXco_RMMTUgfY",
+      "fullname": "Nguyễn Văn B",
+      "birthday": "2021-08-06",
+      "phone_number": "0382374258",
+      "email": "nguyenvanB@gmail.com",
+      "password": "Duelingnetword1",
+      "isAdmin": false,
+      "id": 4
+    },
+    {
+      "default_avatar": "https://i.picsum.photos/id/1005/5760/3840.jpg?hmac=2acSJCOwz9q_dKtDZdSB-OIK1HUcwBeXco_RMMTUgfY",
+      "fullname": "Hồ Hoàng Sang",
+      "birthday": "2021-08-06",
+      "phone_number": "0382374258",
+      "email": "sang1@gmail.com",
+      "password": "Duelingnetword1",
+      "isAdmin": false,
+      "id": 5
+    },
+    {
+      "fullname": "Nguyễn Văn D",
+      "birthday": "2021-08-12",
+      "phone_number": "0382374258",
+      "email": "nguyenvanD@gmail.com",
+      "password": "Duelingnetword1",
+      "isAdmin": false,
+      "default_avatar": "https://i.picsum.photos/id/1005/5760/3840.jpg?hmac=2acSJCOwz9q_dKtDZdSB-OIK1HUcwBeXco_RMMTUgfY",
+      "id": 6
+    },
+    {
+      "fullname": "Hồ Hoàng Sang",
+      "birthday": "2021-08-04",
+      "phone_number": "0382374258",
+      "email": "hoangsangho123@gmail.com",
+      "password": "Duelingnetword1",
+      "isAdmin": false,
+      "default_avatar": "https://i.picsum.photos/id/1005/5760/3840.jpg?hmac=2acSJCOwz9q_dKtDZdSB-OIK1HUcwBeXco_RMMTUgfY",
+      "id": 7
+    },
+    {
+      "fullname": "Nguyễn Văn E",
+      "birthday": "2021-08-19",
+      "phone_number": "0382374258",
+      "email": "nguyenvanE@gmail.com",
+      "password": "Duelingnetword1",
+      "isAdmin": false,
+      "default_avatar": "https://i.picsum.photos/id/1005/5760/3840.jpg?hmac=2acSJCOwz9q_dKtDZdSB-OIK1HUcwBeXco_RMMTUgfY",
+      "id": 8
+    }
   ]
 }

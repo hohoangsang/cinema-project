@@ -1,7 +1,7 @@
-.main__detailEvent {
+.detailEvent {
     margin: 1.5rem 0 3rem 0;
 
-    &__wrapper {
+    &__content {
         &__title {
             @include displayFlex(flex-start, baseline);
             padding: 1rem 0;
@@ -21,7 +21,7 @@
             }
         }
 
-        &__content {
+        &__info {
             @include displayFlex(space-between, unset);
             flex-wrap: wrap;
             margin-top: 1.5rem;
@@ -33,7 +33,7 @@
                 margin-top: .5rem;
             }
 
-            &-img {
+            .info__img {
                 @include w-h(30%, 100%);
                 @media screen and(max-width: $tablet-screen) {
                     @include w-h(40%, 100%);
@@ -51,7 +51,7 @@
                 }
             }
 
-            &-info {
+            .info__description {
                 @include w-h(67%, 100%);
                 @media screen and(max-width: $tablet-screen) {
                     @include w-h(57%, 100%);

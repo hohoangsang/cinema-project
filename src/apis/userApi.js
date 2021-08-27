@@ -9,6 +9,16 @@ const userApi = {
     getUserByEmail: (params) => {
         const url = `/users?email=${params}`;
         return axiosClient.get(url)
+    },
+
+    getUserById: (params) => {
+        const url = `/users?id=${params}`;
+        return axiosClient.get(url)
+    },
+
+    updateUser: (data) => {
+        const url = `/user?id=${data.id}`;
+        return axiosClient.patch(url, data)
     }
 }
 

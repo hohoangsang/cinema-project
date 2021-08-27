@@ -1,4 +1,4 @@
-import { CircularProgress, Container } from '@material-ui/core';
+import { Container } from '@material-ui/core';
 import React, {useState} from 'react';
 import { useForm } from 'react-hook-form';
 import { useTranslation } from 'react-i18next';
@@ -22,7 +22,7 @@ function Register() {
     const onHandleSubmit = (values) => {
         if(values.password === values.confirm_password){
             delete values.confirm_password;
-            dispatch(registerRequest(values));
+            dispatch(registerRequest(values))
         } else {
             setNotice(t('register.confirm_password_error'));
         }

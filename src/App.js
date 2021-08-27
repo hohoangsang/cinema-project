@@ -1,4 +1,6 @@
 import { ConnectedRouter } from "connected-react-router";
+import React, { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
 import {
   Route, Switch
 } from "react-router-dom";
@@ -7,7 +9,7 @@ import Homepage from './components/homepage/Homepage';
 import Footer from './components/patials/footer/Footer';
 import Header from './components/patials/header/Header';
 import Loading from './components/patials/loading/Loading';
-import { EVENT_DETAIL_PATH, EVENT_PATH, LOG_IN_PATH, MOVIE_COMING_PATH, MOVIE_DETAIL_PATH, MOVIE_SEARCH_PATH, MOVIE_SHOWING_PATH, REGISTER_PATH, ROOT_PATH } from './constant/route';
+import { EVENT_DETAIL_PATH, EVENT_PATH, LOG_IN_PATH, MOVIE_COMING_PATH, MOVIE_DETAIL_PATH, MOVIE_SEARCH_PATH, MOVIE_SHOWING_PATH, REGISTER_PATH, ROOT_PATH, USER_PATH } from './constant/route';
 import Login from './features/auth/pages/login/Login';
 import Register from './features/auth/pages/register/Register';
 import EventDetail from "./features/eventPage/EventDetail";
@@ -15,10 +17,21 @@ import EventPage from "./features/eventPage/EventPage";
 import MovieDetail from "./features/moviePage/MovieDetail";
 import MoviePage from "./features/moviePage/MoviePage";
 import Search from "./features/search/Search";
+import LayoutUserPage from "./features/userPage/layout/Layout";
+import { watchIsLogged } from "./redux/action/authAction";
 import './scss/style.scss';
 import { history } from "./utils/history";
 
 function App() {
+  const dispatch = useDispatch();
+  const token = sessionStorage.getItem('access_token') || null;
+
+  useEffect(() => {
+    if (token !== null) {
+      dispatch(watchIsLogged(token));
+    }
+  }, [])
+
   return (
     <div className="App">
         <Loading></Loading>
@@ -45,6 +58,9 @@ function App() {
             </Route>
             <Route path={EVENT_DETAIL_PATH}>
               <EventDetail></EventDetail>
+            </Route>
+            <Route path={USER_PATH}>
+              <LayoutUserPage></LayoutUserPage>
             </Route>
             <Route path={LOG_IN_PATH}>
               <Login></Login>

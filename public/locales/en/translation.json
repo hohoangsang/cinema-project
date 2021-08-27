@@ -94,12 +94,20 @@
         "password_error": "Password contains at least 8 characters, including 1 uppercase letter, 1 lowercase letter and 1 number",
         "confirm_password_error": "Password not match",
         "email_error": "Invalid email",
-        "fullname_error": "Invalid name"
+        "fullname_error": "Invalid name",
+        "default_avatar": "Avatar"
     },
     "info":{
         "info_person":"Personal Information",
         "help":"Help",
-        "logout":"Logout"
+        "logout":"Logout",
+        "hi": "Hi",
+        "dashboard": "DASHBOARD",
+        "account_detail": "CHI TIẾT TÀI KHOẢN",
+        "transactions_history": "TRANSACTIONS HISTORY",
+        "bio": "From this dashboard, you can have an overview of your account and update any information easily.",
+        "edit": "Edit",
+        "change_password": "Change password"
     },
     "search": {
         "results_searched": "results searched",

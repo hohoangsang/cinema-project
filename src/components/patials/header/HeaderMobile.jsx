@@ -9,6 +9,7 @@ function HeaderMobile(props) {
     const {
         isLogIn,
         handleLogOut,
+        userId
     } = props
     const [showMenu, setShowMenu] = useState(false)
     const [showSubMenu, setShowSubMenu] = useState({
@@ -111,7 +112,7 @@ function HeaderMobile(props) {
             </div>
 
             <div className="header__mobile__account" style={{display: showAccount ? "block" : "none"}}>
-                <Link className="header__mobile__account-item" to="/">
+                <Link className="header__mobile__account-item" to="/">     
                     <p>{t('header.navTop.my_account')}</p>
                 </Link>
                 {!isLogIn
