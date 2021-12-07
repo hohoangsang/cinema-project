@@ -9,6 +9,8 @@ import searchReducer from '../reducer/searchReducer';
 import { connectRouter } from 'connected-react-router';
 import { history } from '../../utils/history';
 import userReducer from './userReducer';
+import userManagementReducer from './userManagementReducer';
+import cityReducer from './cityReducer';
 
 export default combineReducers({
     router: connectRouter(history),
@@ -19,5 +21,7 @@ export default combineReducers({
     auth: authReducer,
     loading: loadingReducer,
     search: searchReducer,
-    user: userReducer
+    user: userReducer,
+    userManagement: userManagementReducer,
+    city: cityReducer
 })

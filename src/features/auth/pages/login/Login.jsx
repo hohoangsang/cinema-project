@@ -2,17 +2,19 @@ import { Container } from '@material-ui/core';
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { useTranslation } from 'react-i18next';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux'; 
 import { Link, useHistory } from 'react-router-dom';
 import { REGISTER_PATH } from '../../../../constant/route';
 import { logInRequest } from '../../../../redux/action/authAction';
-import { emailRegex } from '../../../../utils/index';
+import { emailRegex } from '../../../../utils/regex';
 import InputText from '../../../../components/form/inputText/InputText';
+import Alert from '@material-ui/lab/Alert';
 
 function Login() {
     const dispatch = useDispatch();
     const history = useHistory();
     const { t } = useTranslation();
+    const { error } = useSelector(state => state.auth);
     const { 
         control, 
         handleSubmit, 
@@ -47,15 +49,19 @@ function Login() {
                                 placeholder={t('login.email_placeholder')}
                             />
                         </div>
+
                         <div className="row-block">
                             <InputText
                                 control={control}
-                                fieldName="password"
+                        fieldName="password"
                                 error={errors.password}
                                 type="password"
                                 placeholder={t('login.password_placeholder')}
                             />
                         </div>
+
+                        {error && (<Alert className="alert" severity="error">{error}</Alert>)}
+                        <br/>
                         <button type="submit" className="primary-btn">
                             {t('login.login')}
                         </button>

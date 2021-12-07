@@ -51,6 +51,14 @@ ul {
         }
     }
 
+    .alert {
+        @include w-h(70%, 100%);
+        
+        @media screen and (max-width: $tablet-screen) {
+            @include w-h(100%, 100%);
+        }
+    }
+
     .primary-btn {
         @include w-h(70%, 100%);
         outline: none;

@@ -5,6 +5,8 @@ import moviesSaga from './moviesSaga';
 import authSaga from './authSaga';
 import searchSaga from './searchSaga';
 import userSaga from './userSaga';
+import userManagementSaga from './userManagementSaga';
+import citySaga from './citySaga';
 
 function* rootSaga() {
     yield spawn(bannerSaga);
@@ -13,6 +15,8 @@ function* rootSaga() {
     yield spawn(authSaga);
     yield spawn(searchSaga);
     yield spawn(userSaga);
+    yield spawn(userManagementSaga);
+    yield spawn(citySaga);
 }
 
 export default rootSaga;

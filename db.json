@@ -485,22 +485,26 @@
   "users": [
     {
       "default_avatar": "https://i.picsum.photos/id/1005/5760/3840.jpg?hmac=2acSJCOwz9q_dKtDZdSB-OIK1HUcwBeXco_RMMTUgfY",
-      "fullname": "Hồ Hoàng Sang",
-      "birthday": "2021-08-04",
+      "fullname": "Hồ Hoàng Sang 123",
+      "birthday": "2021-09-03",
       "phone_number": "0382374258",
       "email": "hoangsangho93@gmail.com",
       "password": "Duelingnetword1",
-      "isAdmin": false,
+      "isAdmin": true,
+      "gender": "male",
+      "city": "ct",
       "id": 1
     },
     {
       "default_avatar": "https://i.picsum.photos/id/1005/5760/3840.jpg?hmac=2acSJCOwz9q_dKtDZdSB-OIK1HUcwBeXco_RMMTUgfY",
       "fullname": "Hồ Hoàng Sang",
-      "birthday": "2021-08-04",
+      "birthday": "2015-12-08",
       "phone_number": "0382374258",
       "email": "sang@gmail.com",
       "password": "Duelingnetword1",
       "isAdmin": false,
+      "gender": "male",
+      "city": "hcm",
       "id": 2
     },
     {
@@ -511,6 +515,8 @@
       "email": "nguyenvanA@gmail.com",
       "password": "Duelingnetword1",
       "isAdmin": false,
+      "gender": "male",
+      "city": "hn",
       "id": 3
     },
     {
@@ -521,37 +527,9 @@
       "email": "nguyenvanB@gmail.com",
       "password": "Duelingnetword1",
       "isAdmin": false,
+      "gender": "male",
+      "city": "ct",
       "id": 4
-    },
-    {
-      "default_avatar": "https://i.picsum.photos/id/1005/5760/3840.jpg?hmac=2acSJCOwz9q_dKtDZdSB-OIK1HUcwBeXco_RMMTUgfY",
-      "fullname": "Hồ Hoàng Sang",
-      "birthday": "2021-08-06",
-      "phone_number": "0382374258",
-      "email": "sang1@gmail.com",
-      "password": "Duelingnetword1",
-      "isAdmin": false,
-      "id": 5
-    },
-    {
-      "fullname": "Nguyễn Văn D",
-      "birthday": "2021-08-12",
-      "phone_number": "0382374258",
-      "email": "nguyenvanD@gmail.com",
-      "password": "Duelingnetword1",
-      "isAdmin": false,
-      "default_avatar": "https://i.picsum.photos/id/1005/5760/3840.jpg?hmac=2acSJCOwz9q_dKtDZdSB-OIK1HUcwBeXco_RMMTUgfY",
-      "id": 6
-    },
-    {
-      "fullname": "Hồ Hoàng Sang",
-      "birthday": "2021-08-04",
-      "phone_number": "0382374258",
-      "email": "hoangsangho123@gmail.com",
-      "password": "Duelingnetword1",
-      "isAdmin": false,
-      "default_avatar": "https://i.picsum.photos/id/1005/5760/3840.jpg?hmac=2acSJCOwz9q_dKtDZdSB-OIK1HUcwBeXco_RMMTUgfY",
-      "id": 7
     },
     {
       "fullname": "Nguyễn Văn E",
@@ -559,9 +537,189 @@
       "phone_number": "0382374258",
       "email": "nguyenvanE@gmail.com",
       "password": "Duelingnetword1",
+      "gender": "male",
       "isAdmin": false,
+      "city": "dn",
       "default_avatar": "https://i.picsum.photos/id/1005/5760/3840.jpg?hmac=2acSJCOwz9q_dKtDZdSB-OIK1HUcwBeXco_RMMTUgfY",
       "id": 8
+    },
+    {
+      "fullname": "Ngô Thị F",
+      "birthday": "2021-08-19",
+      "phone_number": "0382374258",
+      "email": "nguyenvanF@gmail.com",
+      "password": "Duelingnetword1",
+      "gender": "female",
+      "isAdmin": false,
+      "city": "dn",
+      "default_avatar": "https://i.picsum.photos/id/1005/5760/3840.jpg?hmac=2acSJCOwz9q_dKtDZdSB-OIK1HUcwBeXco_RMMTUgfY",
+      "id": 9
+    },
+    {
+      "fullname": "Ngô Thị G",
+      "birthday": "2021-08-19",
+      "phone_number": "0382374258",
+      "email": "nguyenvanG@gmail.com",
+      "password": "Duelingnetword1",
+      "gender": "female",
+      "isAdmin": false,
+      "city": "ct",
+      "default_avatar": "https://i.picsum.photos/id/1005/5760/3840.jpg?hmac=2acSJCOwz9q_dKtDZdSB-OIK1HUcwBeXco_RMMTUgfY",
+      "id": 10
+    },
+    {
+      "fullname": "Nguyễn Văn H",
+      "birthday": "2021-08-12",
+      "phone_number": "0382374258",
+      "email": "nguyenvanH@gmail.com",
+      "password": "Duelingnetword1",
+      "isAdmin": false,
+      "gender": "male",
+      "city": "hcm",
+      "default_avatar": "https://i.picsum.photos/id/1005/5760/3840.jpg?hmac=2acSJCOwz9q_dKtDZdSB-OIK1HUcwBeXco_RMMTUgfY",
+      "id": 11
+    },
+    {
+      "fullname": "Hồ Hoàng Sang",
+      "birthday": "2021-08-04",
+      "phone_number": "0382374258",
+      "email": "hoangsangho1234@gmail.com",
+      "password": "Duelingnetword1",
+      "gender": "male",
+      "isAdmin": false,
+      "city": "ct",
+      "default_avatar": "https://i.picsum.photos/id/1005/5760/3840.jpg?hmac=2acSJCOwz9q_dKtDZdSB-OIK1HUcwBeXco_RMMTUgfY",
+      "id": 12
+    },
+    {
+      "fullname": "Nguyễn Văn I",
+      "birthday": "2021-08-19",
+      "phone_number": "0382374258",
+      "email": "nguyenvanI@gmail.com",
+      "password": "Duelingnetword1",
+      "gender": "male",
+      "isAdmin": false,
+      "city": "hcm",
+      "default_avatar": "https://i.picsum.photos/id/1005/5760/3840.jpg?hmac=2acSJCOwz9q_dKtDZdSB-OIK1HUcwBeXco_RMMTUgfY",
+      "id": 13
+    },
+    {
+      "fullname": "Ngô Thị K",
+      "birthday": "2021-08-19",
+      "phone_number": "0382374258",
+      "email": "nguyenvanK@gmail.com",
+      "password": "Duelingnetword1",
+      "gender": "female",
+      "isAdmin": false,
+      "city": "hn",
+      "default_avatar": "https://i.picsum.photos/id/1005/5760/3840.jpg?hmac=2acSJCOwz9q_dKtDZdSB-OIK1HUcwBeXco_RMMTUgfY",
+      "id": 14
+    },
+    {
+      "fullname": "Bành Thị M",
+      "birthday": "2021-09-16",
+      "phone_number": "0382374258",
+      "email": "banhthiM@gmail.com",
+      "password": "Duelingnetword1",
+      "isAdmin": false,
+      "gender": "female",
+      "city": "hcm",
+      "default_avatar": "https://i.picsum.photos/id/1005/5760/3840.jpg?hmac=2acSJCOwz9q_dKtDZdSB-OIK1HUcwBeXco_RMMTUgfY",
+      "id": 16
+    },
+    {
+      "phone_number": "0905123456",
+      "email": "lethanhuyen@gmail.com",
+      "city": "dn",
+      "birthday": "2004-04-27",
+      "gender": "female",
+      "fullname": "Lê Thanh Uyên",
+      "isAdmin": false,
+      "default_avatar": "https://i.picsum.photos/id/1005/5760/3840.jpg?hmac=2acSJCOwz9q_dKtDZdSB-OIK1HUcwBeXco_RMMTUgfY",
+      "password": "123456",
+      "id": 17
+    },
+    {
+      "phone_number": "0904321654",
+      "email": "lethanhuyen123@gmail.com",
+      "city": "hn",
+      "birthday": "2021-09-03",
+      "gender": "female",
+      "fullname": "Lê Thanh Uyên 2",
+      "isAdmin": false,
+      "default_avatar": "https://i.picsum.photos/id/1005/5760/3840.jpg?hmac=2acSJCOwz9q_dKtDZdSB-OIK1HUcwBeXco_RMMTUgfY",
+      "password": "123456",
+      "id": 18
+    },
+    {
+      "phone_number": "0905439123",
+      "email": "lan123@gmail.com",
+      "city": "ct",
+      "birthday": "2021-09-01T17:00:00.000Z",
+      "gender": "female",
+      "fullname": "Võ Thị Lân",
+      "isAdmin": false,
+      "default_avatar": "https://i.picsum.photos/id/1005/5760/3840.jpg?hmac=2acSJCOwz9q_dKtDZdSB-OIK1HUcwBeXco_RMMTUgfY",
+      "password": "123456",
+      "id": 19
+    },
+    {
+      "phone_number": "0905432567",
+      "email": "lethanhmin@gmail.com",
+      "city": "hcm",
+      "birthday": "2019-07-17",
+      "gender": "female",
+      "fullname": "Lê Thanh Min",
+      "id": 20,
+      "isAdmin": false,
+      "default_avatar": "https://i.picsum.photos/id/1005/5760/3840.jpg?hmac=2acSJCOwz9q_dKtDZdSB-OIK1HUcwBeXco_RMMTUgfY",
+      "password": "123456"
+    },
+    {
+      "fullname": "Nguyễn Văn Z",
+      "birthday": "2016-11-10",
+      "phone_number": "0382374123",
+      "email": "nguyenvanz@gmail.com",
+      "password": "Duelingnetword1",
+      "isAdmin": false,
+      "default_avatar": "https://i.picsum.photos/id/1005/5760/3840.jpg?hmac=2acSJCOwz9q_dKtDZdSB-OIK1HUcwBeXco_RMMTUgfY",
+      "id": 21,
+      "city": "hn",
+      "gender": "male"
+    },
+    {
+      "fullname": "Lê Uyên",
+      "birthday": "2021-09-01",
+      "phone_number": "0382374123",
+      "email": "leuyen@gmail.com",
+      "password": "Duelingnetword1",
+      "isAdmin": false,
+      "default_avatar": "https://i.picsum.photos/id/1005/5760/3840.jpg?hmac=2acSJCOwz9q_dKtDZdSB-OIK1HUcwBeXco_RMMTUgfY",
+      "id": 22,
+      "city": "hcm",
+      "gender": "female"
+    }
+  ],
+  "cities": [
+    {
+      "id": 1,
+      "code": "hn",
+      "name": "Hà Nội"
+    },
+    {
+      "id": 2,
+      "code": "dn",
+      "name": "Đà Nẵng"
+    },
+    {
+      "id": 3,
+      "code": "hcm",
+      "name": "Hồ Chí Minh"
+    },
+    {
+      "id": 4,
+      "code": "ct",
+      "name": "Cần Thơ"
     }
   ]
 }

@@ -1,4 +1,3 @@
-import { useSelector } from 'react-redux';
 import {
     UPDATE_USER_SUCCESS,
     UPDATE_USER_FAIL

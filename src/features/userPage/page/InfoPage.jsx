@@ -6,15 +6,15 @@ import { USER_EDIT_PATH } from '../../../constant/route';
 
 function UserPage() {
     const { t } = useTranslation();
-    const { currentUser } = useSelector(state => state.user)
+    const { currentUser } = useSelector(state => state.user);
 
     return (
         <div className="infoPage">
             <div className="infoPage__title page-title"> 
                 <h2>{t('info.dashboard')}</h2>
             </div>
-            { currentUser &&
-                currentUser.map(user => {
+            { currentUser && 
+                currentUser?.map(user => {
                     return (
                         <div className="infoPage__profile">
                             <div className="infoPage__profile--top">
