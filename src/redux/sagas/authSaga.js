@@ -25,6 +25,7 @@ function* handleLogIn(action) {
         const { getUserByEmail } = userApi;
         const userData = action.payload;
         const { response } = yield call(getUserByEmail, userData.email);
+        console.log(response.data);
         if(userData.password === response.data[0].password) {
             yield put(showLoading());
             const token = jwt.sign({ id:response.data[0].id }, "login", {expiresIn: '1h'});
@@ -41,12 +42,12 @@ function* handleLogIn(action) {
             yield delay(500);
             yield put(hideLoading())
         } else {
-            toast.error("Email hoặc Mật khẩu không đúng!")
+            yield put(logInFail("Email hoặc mật khẩu không đúng"));
         }
     } catch (error) {
         console.log("Saga fail", error);
         toast.error("Đăng nhập thất bại!");
-        yield put(logInFail(error))
+        yield put(logInFail("Email hoặc mật khẩu không đúng"));
         yield put(hideLoading());
     }
 }
@@ -59,7 +60,7 @@ function* handleRegister(action) {
         const userData = action.payload;
         const { response } = yield call(getUserByEmail, userData.email);
         if (response.data.length>0) {
-            toast.error("Email đã tồn tại!")
+            yield put(registerFail("Email đã tồn tại"));
         } else {
             const user = {
                 ...userData,
@@ -70,14 +71,14 @@ function* handleRegister(action) {
             yield delay(500);
             yield put(push(LOG_IN_PATH));
             yield delay(500);
-            toast.success("Đăng kí thành công");
+            toast.success("Đăng ký thành công");
         }
         yield delay(500);
         yield put(hideLoading());
     } catch (error) {
         console.log("saga fail", error);
         yield put(registerFail(error));
-        toast.error("Đăng kí thất bại");
+        yield put(registerFail("Đăng ký thất bại"));
     }
 }
 
@@ -86,6 +87,8 @@ function* handleLogOut() {
     yield delay(800);
     yield sessionStorage.removeItem("access_token")
     yield sessionStorage.removeItem("isAdmin")
+    yield sessionStorage.removeItem("userId")
+    yield put(push(LOG_IN_PATH))
     yield put(hideLoading());
 }
 

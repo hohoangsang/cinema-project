@@ -2,17 +2,19 @@ import { Container } from '@material-ui/core';
 import React, {useState} from 'react';
 import { useForm } from 'react-hook-form';
 import { useTranslation } from 'react-i18next';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { LOG_IN_PATH } from '../../../../constant/route';
-import { emailRegex, nameRegex, passwordRegex, phoneNumberRegex } from '../../../../utils/index';
+import { emailRegex, nameRegex, passwordRegex, phoneNumberRegex } from '../../../../utils/regex';
 import InputText from '../../../../components/form/inputText/InputText';
 import { registerRequest } from '../../../../redux/action/authAction'
+import Alert from '@material-ui/lab/Alert';
 
 function Register() {
     const [notice, setNotice] = useState(null)
     const dispatch = useDispatch();
     const { t } = useTranslation();
+    const { error } = useSelector(state => state.auth);
     const { 
         control,  
         handleSubmit, 
@@ -52,6 +54,7 @@ function Register() {
                                 placeholder={t('register.fullname_placeholder')}
                             />
                         </div>
+
                         <div className="row-block">
                             <InputText
                                 control={control}
@@ -60,6 +63,7 @@ function Register() {
                                 type="date"
                             />
                         </div>
+
                         <div className="row-block">
                             <InputText
                                 control={control}
@@ -70,6 +74,7 @@ function Register() {
                                 placeholder={t('register.phone_number_placeholder')}
                             />
                         </div>
+
                         <div className="row-block">
                             <InputText
                                 control={control}
@@ -79,6 +84,7 @@ function Register() {
                                 placeholder={t('register.email_placeholder')}
                             />
                         </div>
+
                         <div className="row-block">
                             <InputText
                                 control={control}
@@ -89,6 +95,7 @@ function Register() {
                                 placeholder={t('register.password_placeholder')}
                             />
                         </div>
+
                         <div className="row-block">
                             <InputText
                                 control={control}
@@ -98,9 +105,13 @@ function Register() {
                                 placeholder={t('register.confirm_password_placeholder')}
                             />
                         </div>
+
                         <div className="row-block" style={{display: notice ? "block" : "none"}}>
                             <span className="error-message">{notice}</span>
                         </div>
+
+                        {error && (<Alert className="alert" severity="error">{error}</Alert>)}
+                        <br/>
                         <button type="submit" className="primary-btn">
                             {t('register.register')}
                         </button>

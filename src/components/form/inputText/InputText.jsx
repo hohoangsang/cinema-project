@@ -10,7 +10,7 @@ function InputText(props) {
         isRequire = true,
         validatePattern,
         error,
-        type = "text",
+        type,
         disabled = false
     } = props
     const { t } = useTranslation();

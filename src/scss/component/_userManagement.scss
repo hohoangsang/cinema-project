@@ -1,0 +1,109 @@
+.userManagement {
+    @include w-h (100%, 100%);
+    margin-top: .5rem;
+    padding: 0 .5rem;
+
+    .listPage {
+        &__title {
+            @include displayFlex(space-between, center);
+            flex-flow: row nowrap;
+            margin-bottom: 1rem;
+
+            h1 {
+                font-size: 2rem;
+                font-weight: bold;
+            }
+
+            button {
+                background-color: $dark-red;
+                font-size: .5rem;
+            }
+        }
+
+        &__filter {
+            &__searchName {
+                .MuiFormLabel-root.Mui-focused {
+                    color: $dark-red;
+                }
+    
+                .MuiOutlinedInput-root:hover {
+                    .MuiOutlinedInput-notchedOutline {
+                        border-color: $dark-red;
+                    }
+                }
+    
+                .MuiOutlinedInput-root.Mui-focused{
+                    .MuiOutlinedInput-notchedOutline {
+                        border-color: $dark-red;
+                    }
+                }
+            }
+        }
+
+        &__table {
+            border: 1px solid $light-shade-grey;
+
+            td {
+                padding: .5rem 0;
+            }
+
+            th {
+                padding-top: .5rem;
+                padding-bottom: .5rem;
+            }
+
+            button {
+                margin-right: .3rem;
+                padding: .2rem .4rem;
+
+                span {
+                    font-size: .8rem;
+                }
+            }
+        }
+
+        &__pagination {
+            margin: 2rem 0;
+            @include displayFlex(center, center);
+
+            .Mui-selected {
+                background-color: $dark-red;
+            }
+        }
+    }
+
+    .addEditPage {
+        &__caption {
+            @include displayFlex(flex-start, center);
+        }
+
+        &__title {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        &__form {
+            margin-top: 1rem;
+
+            form {
+                width: 50%;
+
+                @media screen and (max-width: $tablet-screen) {
+                    width: 100%;
+                }
+            }
+
+            button {
+                background-color: $dark-red;
+                margin-top: .5rem;
+                span {
+                    font-size: .8rem;
+                }
+            }
+
+            .Mui-disabled {
+                background-color: $light-shade-grey;
+            }
+        }
+    }
+}

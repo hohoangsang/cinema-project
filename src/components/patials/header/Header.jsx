@@ -7,7 +7,7 @@ import iconAccount from '../../../assets/img/icon_login25.png';
 import iconNews from '../../../assets/img/icon_promotion25.png';
 import iconTicket from '../../../assets/img/icon_ticket25.png';
 import iconCareers from '../../../assets/img/recruitment_icon1.png';
-import { LOG_IN_PATH, MOVIE_SHOWING_PATH, MY_TICKET_PATH, MOVIE_COMING_PATH, EVENT_PATH, USER_INFO_PATH } from '../../../constant/route';
+import { EVENT_PATH, LOG_IN_PATH, MOVIE_COMING_PATH, MOVIE_SHOWING_PATH, MY_TICKET_PATH, USER_INFO_PATH } from '../../../constant/route';
 import { logOutRequest } from '../../../redux/action/authAction';
 import SwitchLang from '../switchLang/SwitchLang';
 import HeaderMobile from './HeaderMobile';
@@ -53,7 +53,7 @@ function Header() {
                             <div className="header__top-item">
                                 <div className="header__top-item--title">
                                     <img src={iconAccount} alt="account"/>
-                                    <p>Xin chào {currentUser[0].fullname}!</p>
+                                    <p>Xin chào {currentUser[0]?.fullname}!</p>
                                 </div>
                                 <ul className="sub-menu">
                                     <li>

@@ -99,26 +99,8 @@ function EditPage() {
                     <div className="row-block">
                         <InputText
                             control={control}
-                            fieldName="default_avatar"
-                            error={errors.default_avatar}
-                            type="password"
-                        />
-                    </div>
-                    <div className="row-block">
-                        <InputText
-                            type="password"
-                            control={control}
-                            fieldName="fullname"
-                            error={errors.fullname}
-                            validatePattern={nameRegex}
-                            placeholder={t('register.fullname_placeholder')}
-                        />
-                    </div>
-                    <div className="row-block">
-                        <InputText
-                            control={control}
-                            fieldName="birthday"
-                            error={errors.birthday}
+                            fieldName="password"
+                            error={errors.password}
                             type="password"
                         />
                     </div>

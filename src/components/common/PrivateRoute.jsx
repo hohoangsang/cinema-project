@@ -1,13 +1,16 @@
-import React from 'react'
-import { Route, Redirect } from 'react-router-dom';
-import { LOG_IN_PATH } from '../../constant/route'
+import React from 'react';
+import { Route } from 'react-router-dom';
+import { AdminLayout } from '../layout';
+import { NotFound } from './NotFound';
 
-export function PrivateRoute({component: Component, ...rest }) {
-    return (
-        <Route {...rest} render = {props => {
-            localStorage.getItem('user')
-                ? <component {...props} /> 
-                : <Redirect to={{ pathname: {LOG_IN_PATH}, state: { from: props.location } }}/>
-        }}/>
-    )
+export function PrivateRoute(props) {
+    const isLoggin = Boolean(sessionStorage.getItem('access_token'));
+    const isAdmin = Boolean(sessionStorage.getItem('isAdmin'));
+
+    if( !isLoggin || !isAdmin ) {
+        return <Route component={NotFound}></Route>
+    }
+
+    return <Route {...props}></Route>
 }
+
