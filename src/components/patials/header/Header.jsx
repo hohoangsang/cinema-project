@@ -50,27 +50,29 @@ function Header() {
                             </Link>
                         )
                         : (
-                            <div className="header__top-item">
-                                <div className="header__top-item--title">
-                                    <img src={iconAccount} alt="account"/>
-                                    <p>Xin chào {currentUser[0]?.fullname}!</p>
+                            currentUser && (
+                                <div className="header__top-item">
+                                    <div className="header__top-item--title">
+                                        <img src={iconAccount} alt="account"/>
+                                        <p>Xin chào {currentUser?.fullname}!</p>
+                                    </div>
+                                    <ul className="sub-menu">
+                                        <li>
+                                            <Link to={USER_INFO_PATH} className="sub-menu--item">
+                                                <p>{t('info.info_person')}</p>
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link to="/" className="sub-menu--item">
+                                                <p>{t('info.help')}</p>
+                                            </Link>
+                                        </li>
+                                        <li onClick= {() => handleLogOut()} className="sub-menu--item">
+                                            <p>{t('info.logout')}</p>
+                                        </li>
+                                    </ul>
                                 </div>
-                                <ul className="sub-menu">
-                                    <li>
-                                        <Link to={USER_INFO_PATH} className="sub-menu--item">
-                                            <p>{t('info.info_person')}</p>
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link to="/" className="sub-menu--item">
-                                            <p>{t('info.help')}</p>
-                                        </Link>
-                                    </li>
-                                    <li onClick= {() => handleLogOut()} className="sub-menu--item">
-                                        <p>{t('info.logout')}</p>
-                                    </li>
-                                </ul>
-                            </div>
+                            )
                         )
                     }
 

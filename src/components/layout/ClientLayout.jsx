@@ -34,7 +34,7 @@ export function ClientLayout() {
         if (token !== null) {
             dispatch(watchIsLogged(token));
         }
-    }, [])
+    }, [token])
     return (
         <>
             <Header></Header>

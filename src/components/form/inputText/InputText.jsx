@@ -11,7 +11,8 @@ function InputText(props) {
         validatePattern,
         error,
         type,
-        disabled = false
+        disabled = false,
+        defaultValue
     } = props
     const { t } = useTranslation();
 
@@ -21,15 +22,16 @@ function InputText(props) {
             <Controller
                 control={control}
                 name={fieldName}
+                defaultValue={defaultValue}
                 render={({ field: { onChange, onBlur, value, ref, name } }) => (
                     <input
                         onChange={onChange}
                         onBlur={onBlur}
-                        value={value || ""}
                         type={type}
                         id={fieldName}
                         disabled={disabled}
                         placeholder={placeholder}
+                        defaultValue={defaultValue || ""}
                     />
                 )}
                 rules={{

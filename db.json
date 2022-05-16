@@ -628,30 +628,6 @@
       "id": 16
     },
     {
-      "phone_number": "0905123456",
-      "email": "lethanhuyen@gmail.com",
-      "city": "dn",
-      "birthday": "2004-04-27",
-      "gender": "female",
-      "fullname": "Lê Thanh Uyên",
-      "isAdmin": false,
-      "default_avatar": "https://i.picsum.photos/id/1005/5760/3840.jpg?hmac=2acSJCOwz9q_dKtDZdSB-OIK1HUcwBeXco_RMMTUgfY",
-      "password": "123456",
-      "id": 17
-    },
-    {
-      "phone_number": "0904321654",
-      "email": "lethanhuyen123@gmail.com",
-      "city": "hn",
-      "birthday": "2021-09-03",
-      "gender": "female",
-      "fullname": "Lê Thanh Uyên 2",
-      "isAdmin": false,
-      "default_avatar": "https://i.picsum.photos/id/1005/5760/3840.jpg?hmac=2acSJCOwz9q_dKtDZdSB-OIK1HUcwBeXco_RMMTUgfY",
-      "password": "123456",
-      "id": 18
-    },
-    {
       "phone_number": "0905439123",
       "email": "lan123@gmail.com",
       "city": "ct",
@@ -664,18 +640,6 @@
       "id": 19
     },
     {
-      "phone_number": "0905432567",
-      "email": "lethanhmin@gmail.com",
-      "city": "hcm",
-      "birthday": "2019-07-17",
-      "gender": "female",
-      "fullname": "Lê Thanh Min",
-      "id": 20,
-      "isAdmin": false,
-      "default_avatar": "https://i.picsum.photos/id/1005/5760/3840.jpg?hmac=2acSJCOwz9q_dKtDZdSB-OIK1HUcwBeXco_RMMTUgfY",
-      "password": "123456"
-    },
-    {
       "fullname": "Nguyễn Văn Z",
       "birthday": "2016-11-10",
       "phone_number": "0382374123",
@@ -686,18 +650,6 @@
       "id": 21,
       "city": "hn",
       "gender": "male"
-    },
-    {
-      "fullname": "Lê Uyên",
-      "birthday": "2021-09-01",
-      "phone_number": "0382374123",
-      "email": "leuyen@gmail.com",
-      "password": "Duelingnetword1",
-      "isAdmin": false,
-      "default_avatar": "https://i.picsum.photos/id/1005/5760/3840.jpg?hmac=2acSJCOwz9q_dKtDZdSB-OIK1HUcwBeXco_RMMTUgfY",
-      "id": 22,
-      "city": "hcm",
-      "gender": "female"
     }
   ],
   "cities": [
