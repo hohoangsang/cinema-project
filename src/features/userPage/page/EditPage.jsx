@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 import { useDispatch, useSelector } from "react-redux";
-import InputText from "../../../components/form/InputText/InputText";
+import InputText from "../../../components/form/inputText/InputText";
 import { emailRegex, nameRegex, phoneNumberRegex } from "../../../utils";
 
 function EditPage() {
