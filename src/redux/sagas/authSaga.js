@@ -25,13 +25,12 @@ function* handleLogIn(action) {
         const { getUserByEmail } = userApi;
         const userData = action.payload;
         const { response } = yield call(getUserByEmail, userData.email);
-        console.log(response.data);
         if(userData.password === response.data[0].password) {
             yield put(showLoading());
             const token = jwt.sign({ id:response.data[0].id }, "login", {expiresIn: '1h'});
             sessionStorage.setItem('access_token', token);
             sessionStorage.setItem('userId', response.data[0].id);
-            yield put(updateUserSuccess(response.data));
+            yield put(updateUserSuccess(response.data[0]));
             yield put(logInSuccess());
             if(response.data[0].isAdmin) {
                 sessionStorage.setItem("isAdmin", true)

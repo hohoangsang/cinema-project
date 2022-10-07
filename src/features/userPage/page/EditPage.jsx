@@ -1,8 +1,9 @@
 import React, { useState } from "react";
+import { useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 import { useDispatch, useSelector } from "react-redux";
-import InputText from "../../../components/form/inputText/InputText";
+import InputText from "../../../components/form/InputText/InputText";
 import { emailRegex, nameRegex, phoneNumberRegex } from "../../../utils";
 
 function EditPage() {
@@ -12,7 +13,7 @@ function EditPage() {
   const userId = sessionStorage.getItem("userId");
   const [showChangePassword, setShowChangePassword] = useState(false);
 
-  const initialValues = {
+  const [initialValues, setInitialValues] = useState({
     default_avatar: "",
     fullname: "",
     birthday: "",
@@ -21,7 +22,13 @@ function EditPage() {
     id: userId,
 
     ...currentUser,
-  };
+  });
+
+  useEffect(() => {
+    if (currentUser) {
+      setInitialValues(currentUser);
+    }
+  }, [currentUser]);
 
   const {
     control,
@@ -49,7 +56,7 @@ function EditPage() {
               control={control}
               fieldName="default_avatar"
               error={errors.default_avatar}
-              defaultValues={currentUser.default_avatar}
+              defaultValue={initialValues?.default_avatar}
             />
           </div>
           <div className="row-block">
@@ -59,7 +66,7 @@ function EditPage() {
               error={errors.fullname}
               validatePattern={nameRegex}
               placeholder={t("register.fullname_placeholder")}
-              defaultValues={currentUser.fullname}
+              defaultValue={initialValues?.fullname}
             />
           </div>
           <div className="row-block">
@@ -77,6 +84,7 @@ function EditPage() {
               error={errors.phone_number}
               type="text"
               validatePattern={phoneNumberRegex}
+              defaultValue={initialValues.phone_number}
               placeholder={t("register.phone_number_placeholder")}
             />
           </div>
@@ -86,6 +94,7 @@ function EditPage() {
               fieldName="email"
               error={errors.email}
               validatePattern={emailRegex}
+              defaultValue={initialValues.email}
               placeholder={t("register.email_placeholder")}
             />
           </div>
