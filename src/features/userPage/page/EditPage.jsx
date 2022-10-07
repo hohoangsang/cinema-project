@@ -20,7 +20,6 @@ function EditPage() {
     phone_number: "",
     email: "",
     id: userId,
-
     ...currentUser,
   });
 
